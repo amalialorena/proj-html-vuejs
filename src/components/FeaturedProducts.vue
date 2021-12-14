@@ -10,7 +10,7 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img src="../assets/img/black_elegant_leather_jacket-231x300.jpg" alt="black leather jacket">
+                <img src="../assets/img/black_elegant_leather_jacket-400x520.jpg" alt="black leather jacket">
                 <h5>Black Leather Jacket</h5>
                 <small>Men, Jackets, Jeans</small>
                 <p><s>&dollar;235</s>&dollar;200</p>

@@ -5,6 +5,7 @@
     <FeaturedProducts/>
     <Collections/>
     <BestSeller/>
+    <Offers/>
     <Main/>
     <Footer/>
   </div>
@@ -12,20 +13,22 @@
 
 <script>
 import Nav from './nav/Nav.vue'
+import Header from '../components/Header.vue'
 import FeaturedProducts from '../components/FeaturedProducts.vue'
 import Collections from '../components/Collections.vue'
 import BestSeller from '../components/BestSeller.vue'
+import Offers from '../components/Offers.vue'
 import Main from '../components/Main.vue'
-import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 export default {
   name: 'Wrapper',
   components: {
     Nav,
+    Header,
     FeaturedProducts,
     Collections,
     BestSeller,
-    Header,
+    Offers,
     Main,
     Footer
   }
@@ -34,6 +37,6 @@ export default {
 
 
 <style scoped lang="scss">
-
+  
 
 </style>

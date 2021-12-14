@@ -1,9 +1,5 @@
 <template>
   <div>
-      
-      <section class="offers">
-          offers
-      </section>
       <section class="new-arrivals">
           new arrivals
       </section>

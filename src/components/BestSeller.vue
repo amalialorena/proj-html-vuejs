@@ -51,6 +51,12 @@ section {
         display: flex;
         align-items: center;
         margin-bottom: 60px;
+        .wrapper {
+            width: calc((100% / 4) - 40px);
+            img {
+                width: 100%
+            }
+        }
         .arrow {
             height: 40px;
             width: 20px;
