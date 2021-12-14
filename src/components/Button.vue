@@ -1,12 +1,15 @@
 <template>
- <button>{{data}}</button>
+    <button :class="small? 'small':''">
+        {{text}}
+    </button>
 </template>
 
 <script>
 export default {
   name: 'Button',
   props: {
-      data: String,
+      text: String,
+      small: Boolean,
   }  
 }
 </script>
@@ -20,7 +23,11 @@ export default {
         font-weight: bold;
         padding: 10px 25px;
         border-radius: 17px;
-        margin: 10px;
+        margin: 0 10px;
+    }
+    .small {
+        font-size: .6em;
+        padding: 8px 17px;
     }
 
 </style>

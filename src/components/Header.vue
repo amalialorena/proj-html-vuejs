@@ -7,8 +7,8 @@
             <h4>
                 NEW COLLECTION FROM NEW YORK
             </h4>
-            <Button :data="leftButton"/>
-            <Button :data="rightButton"/>
+            <Button :text="leftButton"/>
+            <Button :text="rightButton"/>
         </div>
     </header>
 </template>

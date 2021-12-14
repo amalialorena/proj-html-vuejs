@@ -82,7 +82,7 @@ export default {
         width:60%;
         .card {
             margin-top: 30px;
-            margin-bottom: 150px;
+            margin-bottom: 130px;
             width: calc(100% / 4);
             img {
                 width: 100%;
