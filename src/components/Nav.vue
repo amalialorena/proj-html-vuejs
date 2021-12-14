@@ -12,7 +12,6 @@ export default {
 
 
 <style scoped lang="scss">
-// debug
     nav {
         height: 100px;
         background-color: #b5b5b5;
