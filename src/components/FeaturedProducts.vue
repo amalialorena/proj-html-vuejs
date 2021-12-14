@@ -2,7 +2,8 @@
     <section>
         <Title 
         :title="titleText"
-        :subtitle="subtitleText"/>
+        :subtitle="subtitleText"
+        />
         <div class="categories">
             <div class="category selected">Men</div>
             <div class="category middle">Women</div>
@@ -59,8 +60,7 @@ export default {
    
 <style scoped lang="scss">
 section {
-    width: 70%;
-    margin: auto;
+
     .categories {
         display: flex;
         justify-content: center;
@@ -81,6 +81,8 @@ section {
     }
     .cards {
         display: flex;
+        width: 70%;
+        margin: auto;
         .card {
             margin-top: 30px;
             margin-bottom: 130px;
@@ -100,7 +102,7 @@ section {
                     margin: 3px;
                 }
             }
-            }
+        }
      
     }
 

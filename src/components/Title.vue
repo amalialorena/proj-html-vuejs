@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: 'Title',
   props: {
       title: String,
       subtitle: String,
@@ -26,6 +26,8 @@ export default {
         text-align: center;
         width: 100%;
         margin-bottom: 30px;
+        width: 70%;
+        margin: auto;
         .title-with-lines {
             display: flex;
             width: 100%;
