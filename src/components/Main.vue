@@ -1,11 +1,5 @@
 <template>
   <div>
-      <section class="new-arrivals">
-          new arrivals
-      </section>
-       <section class="quotes">
-          quotes
-      </section>
       <section class="blog">
           blog
       </section >
