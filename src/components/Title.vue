@@ -23,7 +23,6 @@ export default {
             margin-top: 80px;
             margin-bottom: 8px;
             font-size: 2.4em;
-            font-weight: 700;
             position: relative;
             display: inline-block;
         }
@@ -40,6 +39,7 @@ export default {
         }
         h4 {
             font-size: .9em;
+            font-weight: 500;
             color: #585758;
             margin-bottom: 40px;
         }
