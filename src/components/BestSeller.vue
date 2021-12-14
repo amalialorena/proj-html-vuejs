@@ -5,6 +5,7 @@
             :subtitle="subtitleText"
         />
         <div class="carousel">
+            <div class="arrow">&#8249;</div>
             <div class="wrapper">
                 <img src="../assets/img/spring_printed_dress-200x260.jpg" alt="">
             </div>
@@ -20,6 +21,7 @@
              <div class="wrapper">
                 <img src="../assets/img/hipster_black_top-200x260.jpg" alt="">
             </div>
+            <div class="arrow">&#8250;</div>
         </div>
     </section>
 </template>
@@ -47,6 +49,17 @@ section {
     margin: auto;
      .carousel {
         display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        .arrow {
+            height: 40px;
+            width: 20px;
+            text-align: center;
+            line-height: 40px;
+            background: grey;
+            color: white;
+            flex-shrink: 0;
+        }
     }
 
 }
