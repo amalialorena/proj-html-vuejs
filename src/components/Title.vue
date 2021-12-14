@@ -1,6 +1,11 @@
 <template>
 <div class="container">
-    <h1>{{title}}</h1>
+    <div class="title-with-lines">
+        <hr>
+        <h1>{{title}}</h1>
+        <hr>
+    </div>
+        
     <h4>{{subtitle}}</h4>
 </div>
  
@@ -19,23 +24,25 @@ export default {
 <style scoped lang="scss">
     .container {
         text-align: center;
-        h1 {
-            margin-top: 80px;
-            margin-bottom: 8px;
-            font-size: 2.4em;
-            position: relative;
-            display: inline-block;
-        }
-        h1::after, h1::before{
-            content: '';
-            width: 70%;
-            position: absolute;
-            border-bottom: 1px solid #c0bdbd;
-            top: 50%;
-            margin: 0 20px
-        }
-        h1::before {
-            left:-268px;
+        width: 100%;
+        margin-bottom: 30px;
+        .title-with-lines {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px auto 0;
+            hr {
+                height: 1px;
+                width: 100%;
+            }
+             h1 {
+                flex-shrink: 0;
+                font-size: 2.4em;
+                display: inline-block;
+                padding: 0 30px;
+            }
+           
         }
         h4 {
             font-size: .9em;
@@ -43,6 +50,7 @@ export default {
             color: #585758;
             margin-bottom: 40px;
         }
+       
     }
 
 </style>

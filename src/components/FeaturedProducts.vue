@@ -58,7 +58,10 @@ export default {
 </script>
    
 <style scoped lang="scss">
-     .categories {
+section {
+    width: 70%;
+    margin: auto;
+    .categories {
         display: flex;
         justify-content: center;
         .category {
@@ -78,8 +81,6 @@ export default {
     }
     .cards {
         display: flex;
-        margin: auto;
-        width:60%;
         .card {
             margin-top: 30px;
             margin-bottom: 130px;
@@ -102,5 +103,9 @@ export default {
             }
      
     }
+
+
+}
+   
 
 </style>

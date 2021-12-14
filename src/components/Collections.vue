@@ -73,6 +73,7 @@ export default {
         height: 50vh;
         .card {
             width: calc(100% / 3);
+            min-width: 500px;
             height: 100%;
             overflow: hidden;
             position:relative;

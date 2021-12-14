@@ -1,10 +1,6 @@
 <template>
   <div>
-      <FeaturedProducts/>
-      <Collections/>
-      <section class="best-seller">
-          best seller
-      </section>
+      
       <section class="offers">
           offers
       </section>
@@ -27,13 +23,10 @@
 </template>
 
 <script>
-import FeaturedProducts from '../components/FeaturedProducts.vue'
-import Collections from '../components/Collections.vue'
 export default {
   name: 'Main',
   components: {
-      FeaturedProducts,
-      Collections,
+      
   }
 }
 </script>
