@@ -1,8 +1,8 @@
 <template>
       <div class="card">
         <div class="product">
-            <div class="product-name">{{productName}}</div>
-             <div class="stars">
+            <span class="product-name">{{productName}}</span>
+             <div v-if="stars? 'stars': ''" class="stars">
                  <span v-for="index in stars" :key="index">&#9733;</span>
              </div>
             <span v-if="discount? 'discount': ''" class="discount"><s>{{discount}}</s></span>
@@ -38,13 +38,13 @@ export default {
       .product {
         font-size: 0.7em;
         color: #585758;
-        display: inline-block;
         .stars {
             color: blue;
         }
         .price {
             color: black;
             font-weight: 700;
+            margin: 0 3px;
         }
         .discount {
             color: black;

@@ -176,6 +176,7 @@ export default {
 
 <style scoped lang="scss">
 section {
+  padding: 20px 0;
   width: 70%;
   margin: auto;
   display: flex;
@@ -183,6 +184,7 @@ section {
   min-width: 1100px;
   .column {
     margin: 10px;
+    width: 100%;
     .title {
       font-size: 0.9em;
       color: #413f41;
