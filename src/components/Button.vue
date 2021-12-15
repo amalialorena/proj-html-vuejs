@@ -1,5 +1,5 @@
 <template>
-    <button :class="small? 'small':''">
+    <button :class="small? 'small':'' || blue? 'blue': ''">
         {{text}}
     </button>
 </template>
@@ -10,6 +10,7 @@ export default {
   props: {
       text: String,
       small: Boolean,
+      blue: Boolean,
   }  
 }
 </script>
@@ -28,6 +29,10 @@ export default {
     .small {
         font-size: .6em;
         padding: 8px 17px;
+    }
+    .blue {
+        background-color: #3467c7;
+        border-radius: 20px;
     }
 
 </style>
