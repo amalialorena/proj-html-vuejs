@@ -176,7 +176,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding: 20px 0;
+  padding: 50px 0;
   width: 70%;
   margin: auto;
   display: flex;

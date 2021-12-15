@@ -10,7 +10,7 @@
     <Quotes/>
     <Blog/>
     <Shop/>
-    <Main/>
+    <Brands/>
     <Footer/>
   </div>
 </template>
@@ -23,10 +23,10 @@ import Collections from '../components/Collections.vue'
 import BestSeller from '../components/BestSeller.vue'
 import Offers from '../components/Offers.vue'
 import NewArrivals from '../components/NewArrivals.vue'
-import Main from '../components/Main.vue'
 import Quotes from '../components/Quotes.vue'
 import Blog from '../components/Blog.vue'
 import Shop from '../components/Shop.vue'
+import Brands from '../components/Brands.vue'
 import Footer from '../components/Footer.vue'
 export default {
   name: 'Wrapper',
@@ -41,7 +41,7 @@ export default {
     Quotes,
     Blog,
     Shop,
-    Main,
+    Brands,
     Footer
   }
 }
