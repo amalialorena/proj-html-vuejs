@@ -83,6 +83,7 @@ section {
         display: flex;
         width: 70%;
         margin: auto;
+        min-width: 1100px;
         .card {
             margin-top: 30px;
             margin-bottom: 130px;

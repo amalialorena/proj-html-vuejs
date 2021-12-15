@@ -36,11 +36,12 @@ export default {
 <style scoped lang="scss">
      .small {
         width: 70%;
-        margin: auto;
+        margin: auto;  
     }
      .carousel { 
         align-items: center;
         margin-bottom: 60px;
+        min-width: 1100px;
         display: flex;
         .wrapper {
             width: calc((100% / 4) - 40px);

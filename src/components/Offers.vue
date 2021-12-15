@@ -28,6 +28,7 @@ export default {
         background-position: center;
         .wrapper {
             width: 70%;
+            min-width: 1100px;
             margin: auto;
             display: flex;
             justify-content: space-between;

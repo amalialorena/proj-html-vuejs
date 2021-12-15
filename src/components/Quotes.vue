@@ -33,8 +33,9 @@ section {
     height: 50vh;
     display: flex;
     justify-content: center;
+    
   .testimonial {
-        max-width: 700px;
+        max-width: 1100px;
         margin: auto;
         .img-container {
             text-align: center;

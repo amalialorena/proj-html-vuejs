@@ -27,6 +27,7 @@ export default {
         width: 100%;
         margin-bottom: 30px;
         width: 70%;
+        min-width: 1100px;
         margin: auto;
         .title-with-lines {
             display: flex;
