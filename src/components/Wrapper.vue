@@ -9,6 +9,7 @@
     <NewArrivals/>
     <Quotes/>
     <Blog/>
+    <Shop/>
     <Main/>
     <Footer/>
   </div>
@@ -25,6 +26,7 @@ import NewArrivals from '../components/NewArrivals.vue'
 import Main from '../components/Main.vue'
 import Quotes from '../components/Quotes.vue'
 import Blog from '../components/Blog.vue'
+import Shop from '../components/Shop.vue'
 import Footer from '../components/Footer.vue'
 export default {
   name: 'Wrapper',
@@ -38,6 +40,7 @@ export default {
     NewArrivals,
     Quotes,
     Blog,
+    Shop,
     Main,
     Footer
   }

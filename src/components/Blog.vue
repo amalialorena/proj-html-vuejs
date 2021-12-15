@@ -52,7 +52,7 @@ export default {
 <style scoped lang="scss">
 section {
     padding-bottom: 60px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #f4f4f4;
      .cards {
         width: 70%;
         margin: auto;
@@ -77,7 +77,6 @@ section {
             p {
                 font-size: .8em;
                 color: #585758;
-
             }
         }
     }
