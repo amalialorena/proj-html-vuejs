@@ -52,6 +52,8 @@ export default {
             font-weight: 300;
             margin-bottom: 10px;
         }
-       
+       Button {
+           margin: 0 10px;
+       }
     } 
 </style>

@@ -24,7 +24,6 @@ export default {
         font-weight: bold;
         padding: 10px 25px;
         border-radius: 17px;
-        margin: 0 10px;
     }
     .small {
         font-size: .6em;
