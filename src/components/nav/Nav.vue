@@ -33,8 +33,9 @@
           <ul>
             <NavItem
               v-for="(item, i) in navigation"
-              :key="{ i }"
+              :key="i"
               :label="item.label"
+              :url="item.url"
               :children="item.children"
             />
           </ul>
@@ -67,9 +68,11 @@ export default {
           children: [
             {
               label: "Shop",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Account",
+              url: 'https://wwww.google.com'
             },
           ],
         },
@@ -78,9 +81,11 @@ export default {
           children: [
             {
               label: "Men",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Women",
+              url: 'https://wwww.google.com'
             },
           ],
         },
@@ -89,9 +94,11 @@ export default {
           children: [
             {
               label: "Clothes",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Accesories",
+              url: 'https://wwww.google.com'
             },
           ],
         },
@@ -100,32 +107,40 @@ export default {
           children: [
             {
               label: "T-shirts",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Pants",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Shoes",
+              url: 'https://wwww.google.com'
             },
           ],
         },
         {
           label: "News",
+          url: 'https://wwww.google.com'
         },
         {
           label: "Elements",
           children: [
             {
               label: "Featured Products",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Best Seller",
+              url: 'https://wwww.google.com'
             },
             {
               label: "New Arrivals",
+              url: 'https://wwww.google.com'
             },
             {
               label: "Blog",
+              url: 'https://wwww.google.com'
             },
           ],
         },
@@ -141,6 +156,7 @@ nav {
   margin: auto;
   background: white;
   min-width: 1200px;
+  user-select: none;
   .upper-nav {
     border-bottom: 1px solid #ebebeb;
   }
@@ -152,6 +168,10 @@ nav {
       .menu {
         display: flex;
         align-items: center;
+        .search {
+          font-size: 12px;
+          margin-left:10px;
+        }
       }
       .logo {
         display: flex;

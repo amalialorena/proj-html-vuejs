@@ -1,6 +1,7 @@
 <template>
   <footer>
       <section class="newsletter">
+       <span><i class="far fa-envelope"></i></span> 
       </section>
       <section>
       </section>
@@ -19,12 +20,15 @@ export default {
 
 <style scoped lang="scss">
    footer {
-       height:90vh;
-       background-color: #202226;
-        .copyright {
+      .newsletter {
+        height: 200px; 
+        background-color: #24262a;
+
+      }
+      .copyright {
             height: 100px;
             background-color: black;
-        }
+      }
    }
 
 </style>

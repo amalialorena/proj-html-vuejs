@@ -41,7 +41,6 @@ section {
     h4 {
         font-weight: 400;
         color: #797878;
-        font-size: .9em;
     }
     .logos {
         display: flex;

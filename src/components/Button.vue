@@ -1,5 +1,5 @@
 <template>
-    <button :class="small? 'small':'' || blue? 'blue': ''">
+    <button :class="small? 'small':'' || blue? 'blue': ''" @click="handleClick">
         {{text}}
     </button>
 </template>
@@ -11,7 +11,12 @@ export default {
       text: String,
       small: Boolean,
       blue: Boolean,
-  }  
+  },
+  methods: {
+      handleClick: () => {
+          console.log('clicked button');
+      }
+  }
 }
 </script>
 
@@ -24,6 +29,7 @@ export default {
         font-weight: bold;
         padding: 10px 25px;
         border-radius: 17px;
+        cursor: pointer;
     }
     .small {
         font-size: .6em;
