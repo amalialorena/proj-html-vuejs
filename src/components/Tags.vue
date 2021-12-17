@@ -9,12 +9,7 @@
 export default {
   name: "componentName",
   props: {
-    tags: [
-      {
-        name: String,
-        url: String,
-      },
-    ],
+    tags: Array,
   },
 };
 </script>

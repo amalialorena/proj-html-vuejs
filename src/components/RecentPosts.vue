@@ -10,12 +10,7 @@
 export default {
   name: "RecentPosts",
   props: {
-    recentPosts: [
-      {
-        title: String,
-        url: String,
-      },
-    ],
+    recentPosts: Array,
   },
 };
 </script>

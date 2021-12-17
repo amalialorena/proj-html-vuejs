@@ -1,7 +1,16 @@
 <template>
   <footer>
     <section class="newsletter">
-      <span><i class="far fa-envelope"></i></span>
+      <div class="newsletter-container">
+        <div class="title">
+          <span><i class="far fa-envelope"></i></span>
+          <h2>Subscribe now and get special offers</h2>
+        </div>
+        <div class="email-input">
+          <input placeholder="Insert ypur email" />
+          <Button :blue="true" :text="buttonText" />
+        </div>
+      </div>
     </section>
     <section class="about">
       <div class="container">
@@ -56,6 +65,7 @@
 import ShopCard from "./ShopCard.vue";
 import RecentPosts from "./RecentPosts.vue";
 import Tags from "./Tags.vue";
+import Button from "./Button.vue";
 
 export default {
   name: "Footer",
@@ -63,12 +73,14 @@ export default {
     ShopCard,
     RecentPosts,
     Tags,
+    Button,
   },
   props: {
     products: Array,
   },
   data() {
     return {
+      buttonText: "SEND",
       recentPosts: [
         {
           title:
@@ -99,130 +111,163 @@ export default {
       tags: [
         {
           name: "black",
-          url: "https://wwww.google.com"
+          url: "https://wwww.google.com",
         },
         {
           name: "boots",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Brown",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Travel",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Warm",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "White",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "hat",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "summer",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "fabric",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "red",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "responsive",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "boots",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "winter",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "boots",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "honey",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Grey",
-          url: "https://wwww.google.com"
-        }, 
-          {
+          url: "https://wwww.google.com",
+        },
+        {
           name: "boots",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Brown",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Travel",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "Warm",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "White",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "hat",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "summer",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "fabric",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "red",
-          url: "https://wwww.google.com"
-        }, 
+          url: "https://wwww.google.com",
+        },
         {
           name: "responsive",
-          url: "https://wwww.google.com"
-        }, 
-
+          url: "https://wwww.google.com",
+        },
       ],
     };
   },
 };
-
 </script>
 
 
 <style scoped lang="scss">
 footer {
   color: white;
+  .newsletter {
+    height: 200px;
+    background-color: #303337;
+    .newsletter-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      height: 100%;
+      .title {
+        span i {
+          font-size: 20px;
+          color:grey;
+          padding: 10px;
+          background-color: #202226;
+          border-radius: 25px;
+          border: none;
+          margin: 20px;
+        }
+       h2 {
+         display: inline-block;
+         font-size: 1.4em;
+       }
+      }
+    }
+    .email-input {
+      input {
+        padding: 8px 70px 8px 5px;
+        font-size: .7em;
+        border-radius: 25px;
+        border: none;
+        margin-right: 20px;
+      }
+      Button {
+        padding: 8px 20px;
+        font-size: .7em;
+      }
+    }
+  }
 
   .container {
     display: flex;
     max-width: 1100px;
     margin: auto;
-  }
-
-  .newsletter {
-    height: 200px;
-    background-color: #303337;
   }
 
   .about {

@@ -38,6 +38,7 @@ export default {
     .blue {
         background-color: #3467c7;
         border-radius: 20px;
+        border: none;
     }
 
 </style>
