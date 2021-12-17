@@ -57,7 +57,10 @@
         </div>
       </div>
     </section>
-    <section class="copyright"></section>
+    <section class="copyright">
+      <p>	&copy;Copyright 2012-2020 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress</p>
+      <img src="../assets/img/payment_cards_footer.png" alt="payment cards">
+    </section>
   </footer>
 </template>
 
@@ -231,6 +234,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       max-width: 1100px;
+      width:70%;;
       margin: auto;
       height: 100%;
       .title {
@@ -267,6 +271,7 @@ footer {
   .container {
     display: flex;
     max-width: 1100px;
+    width: 70%;
     margin: auto;
   }
 
@@ -311,6 +316,12 @@ footer {
   .copyright {
     height: 100px;
     background-color: #1d1f22;
+    text-align: center;
+    p {
+      font-size: .7em;
+      font-weight: bold;
+      padding: 20px;
+    }
   }
 }
 </style>
