@@ -29,6 +29,6 @@ export default {
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  min-width: 1000px;
+  min-width: 1280px;
 }
 </style>

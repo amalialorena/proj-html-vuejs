@@ -39,7 +39,6 @@ export default {
 <style scoped lang="scss">
     .card {
         width: calc(100% / 3);
-        min-width: 500px;
         height: 100%;
         overflow: hidden;
         position:relative;
